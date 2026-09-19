@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyberpunk Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>CYBER<span class="neon-pink">TAC</span></h1>
+    
+    <div class="score-board">
+      <div class="score-box player">
+        <span>ИГРОК (X)</span>
+        <p id="playerScore">0</p>
+      </div>
+      <div class="score-box bot">
+        <span>БОТ (O)</span>
+        <p id="botScore">0</p>
+      </div>
+    </div>
+
+    <div class="status" id="status">Твой ход!</div>
+
+    <div class="board" id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+    <button id="resetBtn" class="reset-btn">ПЕРЕЗАПУСК</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
