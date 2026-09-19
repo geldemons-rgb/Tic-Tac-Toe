@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #08090d;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  text-align: center;
+  background: #12131c;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 243, 255, 0.2);
+  box-shadow: 0 0 30px rgba(0, 243, 255, 0.1);
+  width: 360px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #00f3ff;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00f3ff;
+}
+
+.neon-pink {
+  color: #ff007f;
+  text-shadow: 0 0 10px #ff007f;
+}
+
+/* Счёт */
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.score-box {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.score-box span {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.score-box p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.score-box.player p { color: #00f3ff; }
+.score-box.bot p { color: #ff007f; }
+
+.status {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 20px;
+  height: 20px;
+}
+
+/* Сетка игры */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.cell {
+  width: 90px;
+  height: 90px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cell:hover {
+  border-color: #00f3ff;
+  background: rgba(0, 243, 255, 0.05);
+}
+
+.cell.x {
+  color: #00f3ff;
+  text-shadow: 0 0 15px #00f3ff;
+}
+
+.cell.o {
+  color: #ff007f;
+  text-shadow: 0 0 15px #ff007f;
+}
+
+.reset-btn {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid #ff007f;
+  color: #ff007f;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.reset-btn:hover {
+  background: #ff007f;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 0, 127, 0.5);
+}
